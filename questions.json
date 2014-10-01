@@ -1,0 +1,26 @@
+[
+	{
+		id:0,
+		question:'What would you like the question to be?',
+		options: [
+			{
+				option1:'This is an option',
+				target:'1'
+			},
+			{
+				option2:'This is an option as well',
+				target:'2'
+			}			
+		]
+	},
+	{
+		id:1,
+		question:'What would you like the question to be?',
+		options: [
+			{
+				option1:'This is an option',
+				target:'2'
+			}	
+		]
+	}	
+]

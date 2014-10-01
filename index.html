@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>	
+<script>
+(function(){
+	var app = angular.module('QuestionsModule',[]);
+	app.controller('QuestionsController',['$http',function(id,$http){
+	var questions = $http.get('/questions.json').success(function(data){
+			return data;
+		});
+		console.log(questions);
+
+		this.question=questions[id];
+	}]);
+})();	
+</script>	
+</body>
+</html>
